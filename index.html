@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profil Berlan Binenggar</title>
+   <!-- meta name -->
+   <link rel="stylesheet" href="style.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h4>ASSIGNMENT 2 BERLAN</h4>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="#">HOME</a>
+            </li>
+            <li>
+                <a href="#">PRODUCT</a>
+            </li>
+            <li>
+                <a href="#">GALLERY</a>
+            </li>
+            <li>
+                <a href="#">BLOG</a>
+            </li>
+            <li>
+                <a href="#">INVENTORY</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section id="box-profile">
+        <div class="img-profile">
+            <img src=" img/aku.jpg">
+        </div>
+        <div class="description">
+            <h1 id="pName">Nama Anda</h1>
+            <p id="pRole">Front End Designer</p>
+            <a href="#input-form" class="button bg-blue" onclick="showForm()">Edit</a>
+            <a href="#" class="button border-green">Resume</a>
+        </div>
+        <div class="information">
+            <div class="data">
+                <p class="field">Availability</p>
+                <p class="text-gray">Full Time</p>
+            </div>
+            <div class="data">
+                <p class="field">Usia</p>
+                <p class="text-gray">23</p>
+            </div>
+            <div class="data">
+                <p class="field">Lokasi</p>
+                <p class="text-gray">Semarang, Indonesia</p>
+            </div>
+            <div class="data">
+                <p class="field">Pengalaman</p>
+                <p class="text-gray">2</p>
+            </div>
+            <div class="data">
+                <p class="field">Email</p>
+                <p class="text-gray">enggarberlan@gmail.com</p>
+            </div>
+        </div>
+    </section>
+ 
+
+    <section id="input-form">
+        <form method="#" action="#">
+            <div>
+                <label>Nama</label> <br>
+                <input id="inpName" type="text" name="nama" placeholder="Insert your name">
+            </div>
+            <div class="form">
+                <label>Role</label>
+                <input id="inpRole" type="text" name="role" placeholder="Insert your occupation">
+            </div>
+            <div class="form">
+                <label>Availability</label>
+                <input id="inpAvailability" type="text" name="Availability" placeholder="Which availability are you?">
+            </div>
+            <div class="form">
+                <label>Usia</label>
+                <input id="inpUsia" type="text" min="17" max="40" name="usia" placeholder="How old are you?">
+            </div>
+            <div class="form">
+                <label>Lokasi</label>
+                <input id="inpLokasi" type="text" name="lokasi" placeholder="Where is your location?">
+            </div>
+            <div class="form">
+                <label>Years Experience</label>
+                <input id="inpExp" type="text" name="pengalaman" placeholder="How long your related experience last?">
+            </div>
+            <div class="form">
+                <label>Email</label>
+                <input id="inpEmail" type="text" name="email" placeholder="Please insert your email">
+            </div>
+            <div class="form">
+                <input type="submit" name="submit" value="SUBMIT" class="submit-button">
+            </div>
+        </form>
+    </section>
+
+    <script>
+        function showMenu() {
+            var menu = document.getElementById("menu");
+
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+
+        var formMenu = document.getElementById("input-form");
+            formMenu.style.display = "none";
+
+            function showForm() {
+                if (formMenu.style.display === "none") {
+                    formMenu.style.display = "block";
+            } else {
+                formMenu.style.display = "none";
+            }
+
+            var name = document.getElementById("pName").innerHTML;
+
+            document.getElementById("inpName").value = name;
+
+        }
+
+        var formMenu = document.getElementById("input-form");
+            formMenu.style.display = "none";
+
+            function showForm() {
+                if (formMenu.style.display === "none") {
+                    formMenu.style.display = "block";
+            } else {
+                formMenu.style.display = "none";
+            }
+
+            var name = document.getElementById("pRole").innerHTML;
+
+            document.getElementById("inpRole").value = role;
+
+        }
+
+        var formMenu = document.getElementById("input-form");
+            formMenu.style.display = "none";
+
+            function showForm() {
+                if (formMenu.style.display === "none") {
+                    formMenu.style.display = "block";
+            } else {
+                formMenu.style.display = "none";
+            }
+
+            var name = document.getElementsByClassName("field").innerHTML;
+
+            document.getElementsByClassName("inpAvailability").value = availabilty;
+
+        }
+
+        var formMenu = document.getElementById("input-form");
+            formMenu.style.display = "none";
+
+            function showForm() {
+                if (formMenu.style.display === "none") {
+                    formMenu.style.display = "block";
+            } else {
+                formMenu.style.display = "none";
+            }
+
+            var name = document.getElementsByClassName("field").innerHTML;
+
+            document.getElementsByClassName("inpUsia").value = usia;
+
+        }
+
+        var formMenu = document.getElementById("input-form");
+            formMenu.style.display = "none";
+
+            function showForm() {
+                if (formMenu.style.display === "none") {
+                    formMenu.style.display = "block";
+            } else {
+                formMenu.style.display = "none";
+            }
+
+            var name = document.getElementsByClassName("field").innerHTML;
+
+            document.getElementsByClassName("inpLokasi").value = lokasi;
+
+        }
+
+        var formMenu = document.getElementById("input-form");
+            formMenu.style.display = "none";
+
+            function showForm() {
+                if (formMenu.style.display === "none") {
+                    formMenu.style.display = "block";
+            } else {
+                formMenu.style.display = "none";
+            }
+
+            var name = document.getElementsByClassName("field").innerHTML;
+
+            document.getElementsByClassName("inpExp").value = pengalaman;
+
+        }
+
+        var formMenu = document.getElementById("input-form");
+            formMenu.style.display = "none";
+
+            function showForm() {
+                if (formMenu.style.display === "none") {
+                    formMenu.style.display = "block";
+            } else {
+                formMenu.style.display = "none";
+            }
+
+            var name = document.getElementsByClassName("field").innerHTML;
+
+            document.getElementsByClassName("inpEmail").value = email;
+
+        }
+
+        function simpanForm() {
+            formMenu.style.display = "none";
+            var name = document.getElementById("inpName").value;
+
+            document.getElementById("pName").innerHTML = name;
+        }
+
+        function simpanForm() {
+            formMenu.style.display = "none";
+            var name = document.getElementById("inpRole").value;
+
+            document.getElementById("pRole").innerHTML = name;
+        }
+
+        function simpanForm() {
+            formMenu.style.display = "none";
+            var name = document.getElementById("inpAvailabilty").value;
+
+            document.getElementById("field").innerHTML = name;
+        }
+
+        function simpanForm() {
+            formMenu.style.display = "none";
+            var name = document.getElementById("inpUsia").value;
+
+            document.getElementById("field").innerHTML = name;
+        }
+
+        function simpanForm() {
+            formMenu.style.display = "none";
+            var name = document.getElementById("inpLokasi").value;
+
+            document.getElementById("field").innerHTML = name;
+        }
+
+        function simpanForm() {
+            formMenu.style.display = "none";
+            var name = document.getElementById("inpExp").value;
+
+            document.getElementById("field").innerHTML = name;
+        }
+
+        function simpanForm() {
+            formMenu.style.display = "none";
+            var name = document.getElementById("inpEmail").value;
+
+            document.getElementById("field").innerHTML = name;
+        }
+    </script>
+ </body>
+  
+ </html>
+ 
